@@ -1,0 +1,240 @@
+@import "variables.less";
+
+.header {
+    background-image: url(../images/bg-image-header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    padding-top: 235px;
+}
+
+.nav-container {
+    background-color: #212121bb;
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    padding: 0px 25px;
+    border-bottom: 1px solid #4c4f5a;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+}
+
+.n-left-side {
+    h2 {
+        font-size: 33px;
+        color: @pr;
+        font-family: "Poppins-Black";
+        border-right: 1px solid #4c4f5a;
+        border-left: 1px solid #4c4f5a;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0px 25px;
+        margin-left: 25px;
+        margin-right: 40px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    h2:hover {
+        color: @bt;
+    }
+}
+
+
+
+.n-left-side {
+
+    li a {
+        color: @pr;
+        font-family: "Montserrat-SemiBold";
+        font-size: 13px;
+        transition: all 0.3s ease;
+    }
+
+    li a:hover {
+        color: @bt;
+        font-size: 14px;
+    }
+
+}
+
+.n-left-side {
+    display: flex;
+    align-items: center;
+
+    .burger-menu {
+        path {
+            transition: all 0.3s ease;
+        }
+
+        path:hover {
+            fill: @bt;
+        }
+    }
+}
+
+.n-left-side ul {
+    display: flex;
+    gap: 36px;
+}
+
+.n-right-side {
+    display: flex;
+    align-items: center;
+}
+
+.n-right-side .social-links {
+    display: flex;
+    gap: 45px;
+    border-left: 1px solid #4c4f5a;
+    padding: 0px 45px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    svg path {
+        transition: all 0.3s ease;
+        opacity: 0.5;
+    }
+
+    svg path:hover {
+        opacity: 1;
+    }
+}
+
+.checkout-bag {
+    border-right: 1px solid #4c4f5a;
+    border-left: 1px solid #4c4f5a;
+    padding: 0px 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+
+    path {
+        transition: all 0.3s ease;
+    }
+
+    path:hover {
+        fill: #a0f07bf6;
+    }
+}
+
+.search-bt {
+    path {
+        transition: all 0.3s ease;
+    }
+
+    path:hover {
+        fill: @bt;
+    }
+}
+
+.bg-title {
+    font-size: 203.66px;
+    font-family: "Poppins-Bold";
+    width: 604px;
+    line-height: 147.24px;
+    text-align: center;
+    letter-spacing: 5px;
+    letter-spacing: -16px;
+    margin-bottom: 36px;
+    color: @pr;
+    cursor: pointer;
+    animation-name: fast;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    position: relative;
+    background-image: url(../images/giphy.gif);
+    background-blend-mode: color;
+    background-clip: text;
+    background-position: center;
+    background-size: 230px;
+    color: #ffffff80;
+}
+
+
+@keyframes fast {
+    0% {
+        right: -272%;
+        ;
+    }
+
+    50% {
+        right: 0%;
+    }
+
+    80% {
+        right: -95%;
+
+    }
+
+    100% {
+        right: 500%;
+        // color: #4c3626;
+    }
+
+}
+
+.bg-main-title {
+    width: 604px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 249px;
+}
+
+.bg-main-title p {
+    font-size: 20.65px;
+    font-family: "Montserrat-Bold";
+    letter-spacing: 8px;
+    margin-bottom: 59px;
+    color: @pr;
+    cursor: pointer;
+}
+
+.bg-main-title a {
+    color: @pr;
+    font-size: 17.25px;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+    background-color: @bt;
+    height: 48px;
+    width: 159px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bg-main-title a:hover {
+    background-color: @black;
+}
+
+.media-links {
+    display: none;
+    color: @pr;
+    font-size: 13px;
+    font-family: "Montserrat-SemiBold";
+}
+
+
+
+.burger-menu-right {
+    border-left: 1px solid #4c4f5a;
+    padding-left: 25px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    display: none;
+}
+

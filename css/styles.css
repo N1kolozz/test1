@@ -1,0 +1,889 @@
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts/Lato-Black.eot");
+  src: url("../fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff"), url("../fonts/Lato-Black.ttf") format("truetype"), url("../fonts/Lato-Black.svg#Lato-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lemon-Milk-Bold";
+  src: url("../fonts/LEMONMILK-Bold.eot");
+  src: url("../fonts/LEMONMILK-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LEMONMILK-Bold.woff2") format("woff2"), url("../fonts/LEMONMILK-Bold.woff") format("woff"), url("../fonts/LEMONMILK-Bold.ttf") format("truetype"), url("../fonts/LEMONMILK-Bold.svg#LEMONMILK-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Peace-Sans";
+  src: url("../fonts/PeaceSans.eot");
+  src: url("../fonts/PeaceSans.eot?#iefix") format("embedded-opentype"), url("../fonts/PeaceSans.woff2") format("woff2"), url("../fonts/PeaceSans.woff") format("woff"), url("../fonts/PeaceSans.ttf") format("truetype"), url("../fonts/PeaceSans.svg#PeaceSans") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open-Sans-Extra-Bold";
+  src: url("../fonts/OpenSansCondensed-ExtraBold.eot");
+  src: url("../fonts/OpenSansCondensed-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansCondensed-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSansCondensed-ExtraBold.woff") format("woff"), url("../fonts/OpenSansCondensed-ExtraBold.ttf") format("truetype"), url("../fonts/OpenSansCondensed-ExtraBold.svg#OpenSansCondensed-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open-Sans-Italic";
+  src: url("../fonts/OpenSans-Italic.eot");
+  src: url("../fonts/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic.woff2") format("woff2"), url("../fonts/OpenSans-Italic.woff") format("woff"), url("../fonts/OpenSans-Italic.ttf") format("truetype"), url("../fonts/OpenSans-Italic.svg#OpenSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open-Sans-Bold";
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Open-Sans-Light';
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light.woff2') format('woff2'), url('../fonts/OpenSans-Light.woff') format('woff'), url('../fonts/OpenSans-Light.ttf') format('truetype'), url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../fonts/Poppins-Bold.eot');
+  src: url('../fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Bold.woff2') format('woff2'), url('../fonts/Poppins-Bold.woff') format('woff'), url('../fonts/Poppins-Bold.ttf') format('truetype'), url('../fonts/Poppins-Bold.svg#Poppins-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('../fonts/Poppins-SemiBold.eot');
+  src: url('../fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-SemiBold.woff2') format('woff2'), url('../fonts/Poppins-SemiBold.woff') format('woff'), url('../fonts/Poppins-SemiBold.ttf') format('truetype'), url('../fonts/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.eot');
+  src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Regular.woff2') format('woff2'), url('../fonts/Poppins-Regular.woff') format('woff'), url('../fonts/Poppins-Regular.ttf') format('truetype'), url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins-Black';
+  src: url('../fonts/Poppins-Black.eot');
+  src: url('../fonts/Poppins-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-Black.woff2') format('woff2'), url('../fonts/Poppins-Black.woff') format('woff'), url('../fonts/Poppins-Black.ttf') format('truetype'), url('../fonts/Poppins-Black.svg#Poppins-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat-Medium.eot');
+  src: url('../fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Medium.woff2') format('woff2'), url('../fonts/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat-Medium.ttf') format('truetype'), url('../fonts/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('../fonts/Montserrat-Light.eot');
+  src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Light.woff2') format('woff2'), url('../fonts/Montserrat-Light.woff') format('woff'), url('../fonts/Montserrat-Light.ttf') format('truetype'), url('../fonts/Montserrat-Light.svg#Montserrat-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-Regular.woff2') format('woff2'), url('../fonts/Montserrat-Regular.woff') format('woff'), url('../fonts/Montserrat-Regular.ttf') format('truetype'), url('../fonts/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.eot');
+  src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat-SemiBold.woff2') format('woff2'), url('../fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../fonts/BebasNeue-Regular.eot');
+  src: url('../fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue-Regular.woff2') format('woff2'), url('../fonts/BebasNeue-Regular.woff') format('woff'), url('../fonts/BebasNeue-Regular.ttf') format('truetype'), url('../fonts/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins-BoldItalic';
+  src: url('../fonts/Poppins-BoldItalic.eot');
+  src: url('../fonts/Poppins-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Poppins-BoldItalic.woff2') format('woff2'), url('../fonts/Poppins-BoldItalic.woff') format('woff'), url('../fonts/Poppins-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input {
+  outline: none;
+}
+.header {
+  background-image: url(../images/bg-image-header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  padding-top: 235px;
+}
+.nav-container {
+  background-color: #212121bb;
+  display: flex;
+  justify-content: space-between;
+  height: 74px;
+  padding: 0px 25px;
+  border-bottom: 1px solid #4c4f5a;
+  text-transform: uppercase;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+.n-left-side h2 {
+  font-size: 33px;
+  color: #fff;
+  font-family: "Poppins-Black";
+  border-right: 1px solid #4c4f5a;
+  border-left: 1px solid #4c4f5a;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 25px;
+  margin-left: 25px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.n-left-side h2:hover {
+  color: #3954d9;
+}
+.n-left-side li a {
+  color: #fff;
+  font-family: "Montserrat-SemiBold";
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+.n-left-side li a:hover {
+  color: #3954d9;
+  font-size: 14px;
+}
+.n-left-side {
+  display: flex;
+  align-items: center;
+}
+.n-left-side .burger-menu path {
+  transition: all 0.3s ease;
+}
+.n-left-side .burger-menu path:hover {
+  fill: #3954d9;
+}
+.n-left-side ul {
+  display: flex;
+  gap: 36px;
+}
+.n-right-side {
+  display: flex;
+  align-items: center;
+}
+.n-right-side .social-links {
+  gap: 45px;
+  border-left: 1px solid #4c4f5a;
+  padding: 0px 45px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.n-right-side .social-links svg path {
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+.n-right-side .social-links svg path:hover {
+  opacity: 1;
+}
+.checkout-bag {
+  border-right: 1px solid #4c4f5a;
+  border-left: 1px solid #4c4f5a;
+  padding: 0px 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.checkout-bag path {
+  transition: all 0.3s ease;
+}
+.checkout-bag path:hover {
+  fill: #a0f07bf6;
+}
+.search-bt path {
+  transition: all 0.3s ease;
+}
+.search-bt path:hover {
+  fill: #3954d9;
+}
+.bg-title {
+  font-size: 203.66px;
+  font-family: "Poppins-Bold";
+  width: 604px;
+  line-height: 147.24px;
+  text-align: center;
+  letter-spacing: 5px;
+  letter-spacing: -16px;
+  margin-bottom: 36px;
+  color: #fff;
+  cursor: pointer;
+  animation-name: fast;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  position: relative;
+  background-image: url(../images/giphy.gif);
+  background-blend-mode: color;
+  background-clip: text;
+  background-position: center;
+  background-size: 230px;
+  color: #ffffff80;
+}
+@keyframes fast {
+  0% {
+    right: -272%;
+  }
+  50% {
+    right: 0%;
+  }
+  80% {
+    right: -95%;
+  }
+  100% {
+    right: 500%;
+  }
+}
+.bg-main-title {
+  width: 604px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 249px;
+}
+.bg-main-title p {
+  font-size: 20.65px;
+  font-family: "Montserrat-Bold";
+  letter-spacing: 8px;
+  margin-bottom: 59px;
+  color: #fff;
+  cursor: pointer;
+}
+.bg-main-title a {
+  color: #fff;
+  font-size: 17.25px;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  background-color: #3954d9;
+  height: 48px;
+  width: 159px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.bg-main-title a:hover {
+  background-color: #2d2b27;
+}
+.media-links {
+  display: none;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Montserrat-SemiBold";
+}
+.burger-menu-right {
+  border-left: 1px solid #4c4f5a;
+  padding-left: 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  display: none;
+}
+.main-hero {
+  max-width: 78%;
+  margin: auto;
+  margin-top: -73px;
+  margin-bottom: -80px;
+}
+.sec-1-block {
+  width: 373px;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #c7c7c7;
+  background-color: #fff;
+}
+.sec-1-block h3 {
+  font-size: 32.84px;
+  font-family: "BebasNeue";
+  color: #0d2e57;
+  cursor: pointer;
+}
+.sec-1-block p {
+  color: #8a8a8a;
+  font-size: 13px;
+  font-family: "Montserrat-Light";
+  width: 244px;
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 23px;
+}
+.sec-1-block a {
+  font-size: 13px;
+  font-family: "Montserrat-SemiBold";
+  color: #3954d9;
+}
+.sec-1-block a:hover {
+  color: #2d2b27;
+}
+.sec-1-block img {
+  margin-bottom: 50px;
+}
+.sec-1 {
+  display: flex;
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+}
+.sec-1-block:last-child {
+  border-right: 0;
+}
+.sec-2 .left-block {
+  width: 750px;
+  height: 751px;
+  background-color: #f2f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sec-2 .left-block h3 {
+  color: #616161;
+  font-family: "Poppins-SemiBold";
+  font-size: 20.43px;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+}
+.sec-2 .left-block > h2 {
+  color: #0d2e57;
+  font-size: 42.99px;
+  font-family: "BebasNeue";
+  margin-bottom: 52px;
+  cursor: pointer;
+}
+.sec-2 .left-block > p {
+  font-size: 18px;
+  color: #8a8a8a;
+  font-family: "Montserrat-Light";
+  width: 523px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 43px;
+}
+.sec-2 .left-block .time-block {
+  display: flex;
+  gap: 21px;
+  margin-bottom: 42px;
+}
+.sec-2 .left-block .time-block .time-info {
+  width: 90.06px;
+  height: 105px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec-2 .left-block .time-block .time-info h2 {
+  color: #2d2b27;
+  font-size: 38.22px;
+  font-family: "Montserrat-SemiBold";
+  margin-bottom: -15px;
+}
+.sec-2 .left-block .time-block .time-info p {
+  font-size: 11.04px;
+  color: #2d2b27;
+  font-family: "Montserrat-SemiBold";
+}
+.sec-2 .left-block .lb-price {
+  color: #3954d9;
+  font-family: "Montserrat-Bold";
+  font-size: 52px;
+  margin-right: 52px;
+}
+.sec-2 .left-block .lb-old-price {
+  color: #2d2b27;
+  font-size: 32.61px;
+  font-family: "Montserrat-Medium";
+  text-decoration: line-through;
+}
+.sec-2 .left-block .lb-price-block {
+  margin-bottom: 52px;
+}
+.sec-2 .left-block a {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  background-color: #3954d9;
+  height: 43px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.sec-2 .left-block a:hover {
+  background-color: #2d2b27;
+}
+.sec-2 {
+  display: flex;
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+  height: 751px;
+}
+.sec-2 .right-block img {
+  width: 744px;
+  height: 100%;
+}
+.sec-3 .products-container {
+  box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec-3 .products-container .product-block:nth-child(4) {
+  border-right: none;
+}
+.sec-3 .products-container .product-block {
+  width: 371px;
+  height: 371px;
+  background-color: #fff;
+  border-right: 1px solid #c7c7c7;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 1%;
+}
+.sec-3 .products-container .product-block h3 {
+  font-size: 25px;
+  font-family: "BebasNeue";
+  color: #0d2e57;
+  margin-top: 45px;
+  cursor: pointer;
+}
+.sec-3 .products-container .product-block .product-info {
+  padding-left: 7%;
+}
+.sec-3 .products-container .product-block .pb-price {
+  color: #3954d9;
+  font-size: 13px;
+  font-family: "Montserrat-SemiBold";
+  margin-right: 10px;
+}
+.sec-3 .products-container .product-block .pb-old-price {
+  color: #818181;
+  text-decoration: line-through;
+  font-size: 12px;
+  font-family: "Montserrat-SemiBold";
+}
+.sec-3 .products-container .product-block h2 {
+  font-size: 59.62px;
+  font-family: "BebasNeue";
+  color: #fff;
+  margin-bottom: 25px;
+}
+.sec-3 .products-container .product-block p {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #fff;
+  width: 199px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+}
+.sec-3 .products-container .product-block .product-info a {
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  background-color: #3954d9;
+  height: 43px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.sec-3 .products-container .product-block .product-info a:hover {
+  background-color: #2d2b27;
+}
+.sec-3 .products-container .product-block img {
+  transition: all 0.3s ease;
+}
+.sec-3 .products-container .product-block img:hover {
+  transform: scale(0.9, 0.9);
+  opacity: 0.7;
+}
+.sec-3 .products-container .pr-small-banner {
+  background-color: #2d2b27;
+}
+.sec-3 .products-container .big-banner {
+  background-image: url(../images/big-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 742px;
+  height: 371px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec-3 .products-container .big-banner h2 {
+  font-size: 59.62px;
+  font-family: "Poppins-BoldItalic";
+  color: #fff;
+  width: 418px;
+  line-height: 61.16px;
+  margin-bottom: 35px;
+  padding-left: 5%;
+}
+.sec-3 .products-container .big-banner a {
+  color: #2d2b27;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-family: "Montserrat";
+  background-color: #65cbff;
+  height: 43px;
+  width: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-left: 5%;
+  transition: all 0.3s ease;
+}
+.sec-3 .products-container .big-banner a:hover {
+  background-color: #3954d9;
+}
+.sec-3 .products-container .product-block:nth-child(11) {
+  border-right: none;
+}
+.sec-3 .products-container .product-block:nth-child(8) img {
+  margin-left: 50px;
+  height: 205px;
+}
+.sec-3 .products-container .product-block:nth-child(3) img {
+  height: 200px;
+  width: 339px;
+}
+.sec-3 .sec-3-hero-button {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sec-3 .sec-3-hero-button a {
+  font-size: 13px;
+  font-family: "Montserrat-SemiBold";
+  color: #3954d9;
+}
+.sec-3 .sec-3-hero-button a:hover {
+  color: #000;
+}
+.sec-3 .sec-3-hero-button:hover {
+  background-color: #2d2b27;
+}
+.sec-4 .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec-4 .gallery-container img {
+  width: 371px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sec-4 .gallery-container img:hover {
+  filter: brightness(1.8);
+  transform: scale(0.9, 0.9);
+}
+.sec-5 .sponsors-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sec-5 .sponsors-container .sponsor-logo {
+  width: 247px;
+  height: 247px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #c7c7c7;
+  border-right: 1px solid #c7c7c7;
+}
+.sec-5 .sponsors-container .sponsor-logo img {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.sec-5 .sponsors-container .sponsor-logo img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.footer {
+  background-image: url(../images/foot-bacgkround-image.png);
+  background-position: center;
+  background-size: cover;
+  padding-top: 190px;
+}
+.footer .foot-container {
+  max-width: 78%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #4e4e4e;
+  padding-bottom: 85px;
+  margin-bottom: 40px;
+}
+.footer .foot-container .foot-nav h2 {
+  font-size: 25px;
+  color: #3954d9;
+  font-family: "Poppins";
+  margin-bottom: 45px;
+}
+.footer .foot-container .foot-nav li {
+  line-height: 30px;
+}
+.footer .foot-container .foot-nav li a {
+  font-size: 15.2px;
+  font-family: "Poppins";
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.footer .foot-container .foot-nav li a:hover {
+  color: #3954d9;
+}
+.footer .foot-container .foot-nav .foot-social-links img {
+  margin-bottom: 90px;
+  margin-top: -25px;
+}
+.footer .foot-container .foot-nav .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer .foot-container .foot-nav .newsletter input {
+  background-color: #2f2f2f;
+  width: 404px;
+  height: 39px;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 28px;
+  padding-left: 15px;
+  color: #3954d9;
+}
+.footer .foot-container .foot-nav .newsletter input:focus {
+  border: 1px solid #fff;
+}
+.footer .foot-container .foot-nav .newsletter button {
+  width: 141px;
+  height: 39px;
+  background-color: #3954d9;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Montserrat";
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.footer .foot-container .foot-nav .newsletter button:hover {
+  background-color: #2d2b27;
+}
+.footer .foot-container .links-signup .foot-nav:last-child h2 {
+  margin-bottom: 3px;
+}
+.footer .copyright-payment {
+  display: flex;
+  justify-content: space-between;
+  max-width: 78%;
+  margin: auto;
+}
+.footer .copyright-payment .copyright-block p {
+  font-size: 15.2px;
+  color: #6f6f6f;
+  font-family: "Poppins";
+  line-height: 30px;
+  width: 374px;
+}
+.footer .copyright-payment .payment-block img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.footer .copyright-payment .payment-block img:hover {
+  opacity: 1;
+}
+@media (max-width: 1400px) {
+  .social-links li {
+    display: none;
+  }
+  .media-links {
+    display: inline-block;
+  }
+  .burger-menu-right {
+    display: inline-block;
+  }
+  .n-left-side ul {
+    display: none;
+  }
+  .bg-title {
+    animation: none;
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+  .bg-title {
+    font-size: 158.66px;
+    line-height: 120.24px;
+    letter-spacing: 0px;
+  }
+  .bg-main-title {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 749px) {
+  .n-right-side .social-links {
+    display: none;
+  }
+  .burger-menu svg {
+    width: 20px;
+  }
+  .checkout-bag svg {
+    width: 20px;
+  }
+  .search-bt svg {
+    width: 20px;
+  }
+  .burger-menu-right svg {
+    width: 20px;
+  }
+  .n-left-side h2 {
+    font-size: 15px;
+  }
+  .nav-container {
+    height: 50px;
+  }
+  .bg-title {
+    width: 495px;
+    font-size: 85.66px;
+    line-height: 70.24px;
+    letter-spacing: 0px;
+  }
+  .bg-main-title {
+    width: 290px;
+  }
+  .bg-main-title p {
+    font-size: 13.65px;
+    letter-spacing: 1px;
+  }
+}
+@media (max-width: 470px) {
+  .burger-menu-right {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .checkout-bag {
+    padding: 0px 10px;
+    border-left: none;
+  }
+  .n-left-side h2 {
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,119 @@
+@import "variables.less";
+
+.footer {
+    background-image: url(../images/foot-bacgkround-image.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 190px;
+
+    .foot-container {
+        max-width: 78%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border-bottom: 1px solid #4e4e4e;
+        padding-bottom: 85px;
+        margin-bottom: 40px;
+
+        .foot-nav {
+
+            h2 {
+                font-size: 25px;
+                color: @bt;
+                font-family: "Poppins";
+                margin-bottom: 45px;
+            }
+
+            li {
+                line-height: 30px;
+
+                a {
+                    font-size: 15.2px;
+                    font-family: "Poppins";
+                    color: @pr;
+                    transition: all 0.3s ease;
+                }
+                a:hover {
+                    color: @bt;
+                }
+            }
+
+            .foot-social-links img {
+                margin-bottom: 90px;
+                margin-top: -25px;
+            }
+
+            .newsletter {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                input {
+                    background-color: #2f2f2f;
+                    width: 404px;
+                    height: 39px;
+                    border-radius: 50px;
+                    border: none;
+                    margin-bottom: 28px;
+                    padding-left: 15px;
+                    color: @bt;
+                }
+
+                input:focus {
+                    border: 1px solid @pr;
+                }
+
+                button {
+                    width: 141px;
+                    height: 39px;
+                    background-color: @bt;
+                    color: @pr;
+                    font-size: 13px;
+                    font-family: "Montserrat";
+                    letter-spacing: 1px;
+                    border: none;
+                    border-radius: 50px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+
+                }
+                button:hover {
+                    background-color: @black;
+                }
+            }
+
+
+        }
+
+        .links-signup .foot-nav:last-child h2 {
+            margin-bottom: 3px;
+        }
+    }
+
+    .copyright-payment {
+        display: flex;
+        justify-content: space-between;
+        max-width: 78%;
+        margin: auto;
+
+        .copyright-block p {
+            font-size: 15.2px;
+            color: #6f6f6f;
+            font-family: "Poppins";
+            line-height: 30px;
+            width: 374px;
+        }
+
+        .payment-block img {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        .payment-block img:hover {
+            opacity: 1;
+        }
+
+    }
+
+}

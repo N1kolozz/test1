@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet/less" type="text/css" href="assets/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="nav-container">
+            <div class="n-left-side">
+                <div class="burger-menu">
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="" width="25" viewBox="0 0 448 512">
+                            <path fill="#ffffff"
+                                d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                        </svg></a>
+                </div>
+                <h2>PORTPRO</h2>
+                <ul>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">Brands</a></li>
+                    <li><a href="">Customize</a></li>
+                </ul>
+            </div>
+            <div class="n-right-side">
+                <ul class="social-links">
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="0 0 320 512">
+                                <path fill="#ffffff"
+                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                            </svg></a></li>
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="0 0 512 512">
+                                <path fill="#ffffff"
+                                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                            </svg></a></li>
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="0 0 640 512">
+                                <path fill="#ffffff"
+                                    d="M386.1 228.5c1.8 9.7 3.1 19.4 3.1 32C389.2 370.2 315.6 448 204.8 448c-106.1 0-192-85.9-192-192s85.9-192 192-192c51.9 0 95.1 18.9 128.6 50.3l-52.1 50c-14.1-13.6-39-29.6-76.5-29.6-65.5 0-118.9 54.2-118.9 121.3 0 67.1 53.4 121.3 118.9 121.3 76 0 104.5-54.7 109-82.8H204.8v-66h181.3zm185.4 6.4V179.2h-56v55.7h-55.7v56h55.7v55.7h56v-55.7H627.2v-56h-55.7z" />
+                            </svg></a></li>
+                    <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28" viewBox="0 0 448 512">
+                                <path fill="#ffffff"
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a></li>
+                            <a class="media-links" href="">SOCIAL</a>
+                </ul>
+                <a class="checkout-bag" href=""><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28"
+                        viewBox="0 0 448 512">
+                        <path fill="#ffffff"
+                            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
+                    </svg></a>
+                <a class="search-bt" href=""><svg xmlns="http://www.w3.org/2000/svg" height="28" width="28"
+                        viewBox="0 0 512 512">
+                        <path fill="#ffffff"
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                    </svg></a>
+                    <div class="burger-menu-right">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="" width="25" viewBox="0 0 448 512">
+                                <path fill="#ffffff"
+                                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                            </svg></a>
+                    </div>
+                    
+            </div>
+        </nav>
+
+        <div class="bg-main-title">
+            <h2 class="bg-title">
+                NIKE SHOES
+            </h2>
+            <p>SIGN UP NOW AND GET 50% OFF</p>
+            <a href="">SHOP NOW</a>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <section class="main-hero">
+            <div class="sec-1">
+                <div class="sec-1-block">
+                    <img src="images/planes-icon.png" alt="">
+                    <h3>FREE SHIPPING</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been
+                        the industry's </p>
+                    <a href="">Click here</a>
+                </div>
+                <div class="sec-1-block">
+                    <img src="images/time-icon.png" alt="">
+                    <h3>FREE SHIPPING</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been
+                        the industry's </p>
+                    <a href="">Click here</a>
+                </div>
+                <div class="sec-1-block">
+                    <img src="images/life-ring-icon.png" alt="">
+                    <h3>FREE SHIPPING</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been
+                        the industry's </p>
+                    <a href="">Click here</a>
+                </div>
+                <div class="sec-1-block">
+                    <img src="images/life-ring-icon.png" alt="">
+                    <h3>FREE SHIPPING</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been
+                        the industry's </p>
+                    <a href="">Click here</a>
+                </div>
+            </div>
+            <div class="sec-2">
+                <div class="left-block">
+                    <h3>Offer Of The Month</h3>
+                    <h2>Phantom Vision Elite Dynamic</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been
+                        the industry's Lorem Ipsum is simply dummy text of the printing</p>
+                    <div class="lb-price-block">
+                        <span class="lb-price">$500</span>
+                        <span class="lb-old-price">$1000</span>
+                    </div>
+
+                    <div class="time-block">
+                        <div class="time-info">
+                            <h2>09</h2>
+                            <span>...</span>
+                            <p>HOURS</p>
+                        </div>
+                        <div class="time-info">
+                            <h2>56</h2>
+                            <span>...</span>
+                            <p>HOURS</p>
+                        </div>
+                        <div class="time-info">
+                            <h2>11</h2>
+                            <span>...</span>
+                            <p>HOURS</p>
+                        </div>
+                    </div>
+                    <a href="">SHOP NOW</a>
+
+                </div>
+                <div class="right-block">
+                    <img src="images/basketball-man-img.png" alt="">
+                </div>
+            </div>
+
+            <div class="sec-3">
+                <div class="products-container">
+                    <div class="product-block">
+                        <a href=""><img src="images/pr-1.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-2.png" alt=""></a>
+
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-3.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-8.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block pr-small-banner">
+                        <div class="product-info">
+                            <h2>MEN'S RUNNING SHOES</h2>
+                            <p>SIGN UP NOW AND GET 50% OFF</p>
+                            <a href="">CLICK HERE</a>
+                        </div>
+                    </div>
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-5.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="big-banner">
+                        <h2>RUN,<br>EAT,SLEEP AND REPEAT</h2>
+                        <a href="">SHOP NOW</a>
+                    </div>
+
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-6.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-7.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-8.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-block">
+                        <a href=""> <img src="images/pr-9.png" alt=""></a>
+                        <div class="product-info">
+                            <h3>Stefan Janoski Max</h3>
+                            <div class="pb-price-block">
+                                <span class="pb-price">$ 100.00</span>
+                                <span class="pb-old-price">$ 200</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec-3-hero-button">
+                        <a href="">CLICK HERE</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sec-4">
+                <div class="gallery-container">
+                    <img src="images/gi-1.png" alt="">
+                    <img src="images/gi-2.png" alt="">
+                    <img src="images/gi-3.png" alt="">
+                    <img src="images/gi-4.png" alt="">
+                    <img src="images/gi-5.png" alt="">
+                    <img src="images/gi-6.png" alt="">
+                    <img src="images/gi-7.png" alt="">
+                    <img src="images/gi-8.png" alt="">
+                </div>
+            </div>
+
+            <div class="sec-5">
+                <div class="sponsors-container">
+                    <div class="sponsor-logo">
+                        <img src="images/bl-1.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-2.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-3.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-4.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-1.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-3.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-5.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-6.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-7.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-8.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-5.png" alt="">
+                    </div>
+                    <div class="sponsor-logo">
+                        <img src="images/bl-7.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="foot-container">
+            <nav class="foot-nav">
+                <h2>SHOPS</h2>
+                <ul class="shops">
+                    <li><a href="">New In</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Schuhe Shoes</a></li>
+                    <li><a href="">Bags & Accessories</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Top Brands</a></li>
+                    <li><a href="">Sale & Special Offers</a></li>
+                    <li><a href="">Lookbook</a></li>
+                </ul>
+            </nav>
+            <nav class="foot-nav">
+                <h2>INFORMATION</h2>
+                <ul class="information">
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">New Collection</a></li>
+                    <li><a href="">Best Sellers</a></li>
+                    <li><a href="">Manufacturers</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Terms & condition</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+            <nav class="foot-nav">
+                <h2>CUSTOMER SERVICE</h2>
+                <ul class="customer-service">
+                    <li><a href="">Search Terms</a></li>
+                    <li><a href="">Advanced Search</a></li>
+                    <li><a href="">Orders and Returns</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">RSS</a></li>
+                    <li><a href="">Help & FAQs</a></li>
+                    <li><a href="">Consultant</a></li>
+                    <li><a href="">Store Locations</a></li>
+                </ul>
+            </nav>
+            <div class="links-signup">
+                <nav class="foot-nav stay-connected">
+                    <h2>STAY CONNECTED</h2>
+                    <a class="foot-social-links" href=""><img src="images/foot-social-links.png" alt=""></a>
+                </nav>
+                <nav class="foot-nav newsletter-nav">
+                    <h2>NEWSLETTER SIGN UP</h2>
+                    <form class="newsletter" action="">
+                        <input type="email">
+                        <button>SHOP NOW</button>
+                    </form>
+                </nav>
+            </div>
+
+        </div>
+        <div class="copyright-payment">
+            <div class="copyright-block">
+                <p>© 2022 PSDfreebies.com | All Rights Reserved.Free PSD Themes & Templates by PSDFreebies.com.</p>
+            </div>
+            <div class="payment-block">
+                <img src="images/foot-payment-icons.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
